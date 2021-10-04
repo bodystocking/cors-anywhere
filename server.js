@@ -23,7 +23,7 @@ var cors_proxy = require('./lib/cors-anywhere');
 cors_proxy.createServer({
   originBlacklist: originBlacklist,
   originWhitelist: originWhitelist,
-  setHeaders: {"referer": "https://www.pixiv.net"}
+  setHeaders: {"referer": "https://www.pixiv.net"},
   checkRateLimit: checkRateLimit,
   removeHeaders: [
     'cookie',
